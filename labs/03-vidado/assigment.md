@@ -5,10 +5,29 @@
 1. Listing of VHDL architecture from source file `mux_3bit_4to1.vhd`. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
 
 ```vhdl
+------------------------------------------------------------
+-- Entity declaration for 4-bit binary comparator
+------------------------------------------------------------
+entity mux_3bit_4to1 is
+    port(
+        a_i           : in  std_logic_vector(2 downto 0);
+        b_i           : in  std_logic_vector(2 downto 0);
+        c_i           : in  std_logic_vector(2 downto 0);
+        d_i           : in  std_logic_vector(2 downto 0);
+        sel_i         : in  std_logic_vector(1 downto 0);
+        f_o           : out std_logic_vector(2 downto 0)
+    );
+end entity mux_3bit_4to1;
+
+------------------------------------------------------------
+-- Architecture body for 4-bit binary comparator
+------------------------------------------------------------
 architecture Behavioral of mux_3bit_4to1 is
 begin
-
-    -- WRITE YOUR CODE HERE
+   f_o <= a_i when (sel_i = "00"); 
+   f_o <= b_i when (sel_i = "01"); 
+   f_o <= c_i when (sel_i = "10"); 
+   f_o <= d_i when (sel_i = "11");                  
 
 end architecture Behavioral;
 ```
