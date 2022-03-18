@@ -19,18 +19,18 @@ begin
     -- q(n+1) = /q(n) if t = 1 (inversion)
     --------------------------------------------------------
     p_t_ff_rst : process(clk)
-    begin
-        if rising_edge (clk) then
+begin
+    if rising_edge (clk) then
         if (rst = '1') then
-            q         <= '0';
-            q_bar     <= '1';
+            s_q         <= '0';
+            s_q_bar     <= '1';
         else
             if (t = '0') then
-                q      <= q;
-                q_bar  <= q_bar;
+                s_q      <= s_q;
+                s_q_bar  <= s_q_bar;
             else 
-                q      <= not q;
-                q_bar  <= not q_bar;
+                s_q      <= not s_q;
+                s_q_bar  <= not s_q_bar;
             end if;
             end if;
     end if;        
