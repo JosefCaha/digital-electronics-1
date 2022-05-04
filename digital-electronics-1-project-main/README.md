@@ -79,7 +79,7 @@ Our assignment: UART interface, ie UART transmitter and receiver. Let the UART f
 2. UART_transmit.vhdl
    * [UART transmit code](https://github.com/R4sp1/digital-electronics-1-project/blob/main/project-source-files/project_1/project_1.srcs/sources_1/new/UART_transmit.vhd)
    * Transmit 8 bits long message in 8N1 UART structure
-   * ![state diagram](diagram.PNG)
+   * ![State diagram](https://github.com/JosefCaha/digital-electronics-1/blob/main/digital-electronics-1-project-main/images/diagram.PNG)
         * State diagram of UART transmit module  
    * 8N1 UART structure corespond to 8 data bits, no parity and 1 stop bit. In normal state serial line is in it's high state (logic 1), if we want to send data we must introduce start bit => go to logical 0, then we send coresponding 8 data bits and in the end we send one stop bit => logical 1
 
