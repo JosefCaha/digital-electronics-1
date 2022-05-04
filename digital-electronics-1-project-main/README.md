@@ -1,9 +1,8 @@
 # UART interface in VHDL - BPC-DE1 team project
 
-### Team members
+### Team
 
-* Syvak Mykyta (responsible for vhdl source code, resources)
-* Jílek Jiří (responsible for GitHub, vhdl source code)
+* Collaboration: Caha Josef, Syvak Mykyta, Jílek Jiří
 
 ### Table of contents
 
@@ -142,14 +141,6 @@ For testing we used PuTTY software to which we send data selected by switches on
 ![ASCII table](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/ASCII-Table-wide.svg/800px-ASCII-Table-wide.svg.png?20100522130436)
 
  Available online at Wikimedia: <a href="https://commons.wikimedia.org/wiki/File:ASCII-Table-wide.svg">ASCII-Table.svg: ZZT32derivative work: Usha</a>, Public domain, via Wikimedia Commons
- 
-<a name="video"></a>
-
-## Video
-
-Write your text here
-
-<a name="references"></a>
 
 ## References
 
