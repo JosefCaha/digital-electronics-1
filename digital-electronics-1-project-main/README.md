@@ -10,6 +10,7 @@
 * [Hardware description](#hardware)
 * [VHDL modules description and simulations](#modules)
 * [TOP module description and simulations](#top)
+* [Video](#video)
 * [References](#references)
 
 <a name="objectives"></a>
@@ -41,7 +42,7 @@ Our assignment: UART interface, ie UART transmitter and receiver. Let the UART f
 ## VHDL modules description and simulations
 
 1. clock_enable.vhdl
-    * [Clock_enable code](https://github.com/R4sp1/digital-electronics-1-project/blob/main/project-source-files/project_1/project_1.srcs/sources_1/new/clock_enable.vhd)
+    * [Clock_enable code](https://github.com/JosefCaha/digital-electronics-1/blob/main/digital-electronics-1-project-main/project-source-files/project_1/project_1.srcs/sources_1/new/clock_enable.vhd)
     * Used to generate clock signal at 9600 baud rate
     * We used folowing equation to determine number of internal 100 MHz clock pulses to generate one enable impulse which will corespond to 9600 bauds => 9600 Hz
     ![equation](images/equations.png)
@@ -76,7 +77,7 @@ Our assignment: UART interface, ie UART transmitter and receiver. Let the UART f
     * In simulation we can see internal clock pulses and when we hit 10400 pulses we generate one enable impulse
 
 2. UART_transmit.vhdl
-   * [UART transmit code](https://github.com/R4sp1/digital-electronics-1-project/blob/main/project-source-files/project_1/project_1.srcs/sources_1/new/UART_transmit.vhd)
+   * [UART transmit code](https://github.com/JosefCaha/digital-electronics-1/blob/main/digital-electronics-1-project-main/project-source-files/project_1/project_1.srcs/sources_1/new/UART_transmit.vhd)
    * Transmit 8 bits long message in 8N1 UART structure
    * ![State diagram](https://github.com/JosefCaha/digital-electronics-1/blob/main/digital-electronics-1-project-main/images/diagram.PNG)
         * State diagram of UART transmit module  
@@ -88,7 +89,7 @@ Our assignment: UART interface, ie UART transmitter and receiver. Let the UART f
    * In the bottom of the picture we can see that every bit have 104 µs period which corespond to 9600 baud rate
 
 3. UART_receive.vhdl
-    * [UART_receive code](https://github.com/R4sp1/digital-electronics-1-project/blob/main/project-source-files/project_1/project_1.srcs/sources_1/new/UART_recive.vhd)
+    * [UART_receive code](https://github.com/JosefCaha/digital-electronics-1/blob/main/digital-electronics-1-project-main/project-source-files/project_1/project_1.srcs/sources_1/new/UART_recive.vhd)
     * In receive mode we must sample data line faster then baud rate to catch start bit, after start bit we sample invidual bits and adding them to counter which we send to output after stop bit
 
     ![UART receive simulation](images/sim.png)
@@ -96,7 +97,7 @@ Our assignment: UART interface, ie UART transmitter and receiver. Let the UART f
     * UART receive data line in simulation is showed in dark blue colour. We can see that LEDs (blue signals) are defined only after data are completely received. Number x55 in rx_data[] corespond to recived bit sequence "01010101" and that corespond to character "U" in ASCII table
 
 4. testbench.vhdl
-    * [Testbench code](https://github.com/R4sp1/digital-electronics-1-project/blob/main/project-source-files/project_1/project_1.srcs/sim_1/new/testbench.vhd)
+    * [Testbench code](https://github.com/JosefCaha/digital-electronics-1/blob/main/digital-electronics-1-project-main/project-source-files/project_1/project_1.srcs/sim_1/new/testbench.vhd)
     * Used to simulate and test components
     * Clock generation process:
     ```vhdl
@@ -131,7 +132,7 @@ Our assignment: UART interface, ie UART transmitter and receiver. Let the UART f
 
 ## TOP module description and simulations
 
-[Top module code](https://github.com/R4sp1/digital-electronics-1-project/blob/main/project-source-files/project_1/project_1.srcs/sources_1/new/top.vhd)
+[Top module code](https://github.com/JosefCaha/digital-electronics-1/blob/main/digital-electronics-1-project-main/project-source-files/project_1/project_1.srcs/sources_1/new/top.vhd)
 
 After pin assignment we declared work entities and started sub codes as a clock_enble, UART_transmit and UART_receive. After that we assigned 10400 value as HEX code to s_bound signal which pass it to the clock counter.
 
