@@ -10,7 +10,6 @@
 * [Hardware description](#hardware)
 * [VHDL modules description and simulations](#modules)
 * [TOP module description and simulations](#top)
-* [Video](#video)
 * [References](#references)
 
 <a name="objectives"></a>
