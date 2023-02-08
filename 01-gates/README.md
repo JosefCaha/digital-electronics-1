@@ -2,7 +2,7 @@
 
 ### De Morgan's laws (1-gates)
 
-1. Rovnost tri funkci, podle zadané "orig" funkce:
+1. Rovnost tri funkci, podle zadane "orig" funkce:
 
    ![funkce_DeMorgan](https://github.com/JosefCaha/digital-electronics-1/blob/main/01-gates/DeMorgan.jpg)
 
