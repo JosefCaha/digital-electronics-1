@@ -1,12 +1,12 @@
 # Lab 1: Josef Caha
 
-### De Morgan's laws
+### De Morgan's laws (1-gates)
 
-1. Equations of all three versions of logic function f(c,b,a):
+1. Rovnost tri funkci, podle zadané "orig" funkce:
 
-   ![Logic function](https://github.com/JosefCaha/digital-electronics-1/blob/main/01-gates/DeMorgan.jpg)
+   ![funkce_DeMorgan](https://github.com/JosefCaha/digital-electronics-1/blob/main/01-gates/DeMorgan.jpg)
 
-2. Listing of VHDL architecture from design file (`design.vhd`) for all three functions. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
+2. VHDL kod pro funkce:
 
 ```vhdl
 architecture dataflow of gates is
@@ -17,7 +17,7 @@ begin
 end architecture dataflow;
 ```
 
-3. Complete table with logic functions' values:
+3. Tabulka vystupu logickych funkci podle jejich zadanych vstupu:
 
    | **c** | **b** |**a** | **f_ORIG** | **f_(N)AND** | **f_(N)OR** |
    | :-: | :-: | :-: | :-: | :-: | :-: |
