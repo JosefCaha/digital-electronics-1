@@ -34,10 +34,13 @@ end architecture dataflow;
 
 ### Distributive laws
 
-1. Screenshot with simulated time waveforms. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
+1. Overeni 1. distribucniho zakonu a screenshot prubehu signalu:
 
-   ![your figure]()
+   ![prvni_distribucni_zakon](https://github.com/JosefCaha/digital-electronics-1/blob/main/01-gates/prvni_distribucni_zakon.PNG)
+   
+   Signaly overujici PLATNOST 1. disttibucniho zakonu:
+   ![signaly_distribucni_zakon](https://github.com/JosefCaha/digital-electronics-1/blob/main/01-gates/signaly_distribucni_zakon.PNG)
 
-2. Link to your public EDA Playground example:
+2. EDA Playground - Josef Caha:
 
    [EDA playground - Josef Caha (1-gates)](https://www.edaplayground.com/x/JJpR)
