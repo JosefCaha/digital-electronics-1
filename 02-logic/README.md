@@ -48,8 +48,8 @@
 
 2. Text console screenshot during your simulation, including reports.
 
-   ![your figure](https://github.com/JosefCaha/digital-electronics-1/blob/main/02-logic/testbench_4-bit.PNG)
-   ![your figure](https://github.com/JosefCaha/digital-electronics-1/blob/main/labs/02-comb_logic/testBench.PNG)
+   ![signals-4-bit](https://github.com/JosefCaha/digital-electronics-1/blob/main/02-logic/testbench_4-bit.PNG)
+   ![report-4-bit](https://github.com/JosefCaha/digital-electronics-1/blob/main/02-logic/report_4-bit.PNG)
    
 
 3. Link to your public EDA Playground example:
