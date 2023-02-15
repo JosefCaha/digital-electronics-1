@@ -29,20 +29,18 @@
         -- Report a note at the beginning of stimulus process
         report "Stimulus process started" severity note;
 
-        -- My test case for "xxxx33"
-        s_b <= "0011"; 
-        s_a <= "0011";       
-        wait for 100 ns;
-        -- Expected output
+
+        -- My test case for "xxxx33" -> prvni testovany signal
+        s_b <= "0011"; s_a <= "0011"; wait for 100 ns;       
+        -- PREDPOKLADANE VYSTUPY, PRO SPRAVNE NAPSANYCH PODMINKACH V DESIGNU
         assert ((s_B_greater_A = '0') and
                 (s_B_equals_A  = '1') and
                 (s_B_less_A    = '0'))
         -- If false, then report an error
         report "Input combination has failed" severity error;
-
         -- Report a note at the end of stimulus process
         report "Stimulus process finished" severity note;
-        wait;
+        wait; -- Data generation process is suspended forever
     end process p_stimulus;
 ```
 
