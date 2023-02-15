@@ -6,16 +6,16 @@
 
    Greater than:
 
-   ![K-maps](https://github.com/JosefCaha/digital-electronics-1/blob/main/labs/02-comb_logic/greater.PNG)
+   ![K-maps-greater](https://github.com/JosefCaha/digital-electronics-1/blob/main/02-logic/greater.png)
 
    Less than:
 
-   ![K-maps](https://github.com/JosefCaha/digital-electronics-1/blob/main/labs/02-comb_logic/lesser_simp.PNG)
+   ![K-maps-lesser](https://github.com/JosefCaha/digital-electronics-1/blob/main/02-logic/lesser_simp.png)
 
 2. Equations of simplified SoP (Sum of the Products) form of the "greater than" function and simplified PoS (Product of the Sums) form of the "less than" function.
 
-   ![Logic functions](https://github.com/JosefCaha/digital-electronics-1/blob/main/labs/02-comb_logic/g_SoP.PNG)
-   ![Logic functions](https://github.com/JosefCaha/digital-electronics-1/blob/main/labs/02-comb_logic/l_PoS.PNG)
+   ![SoP](https://github.com/JosefCaha/digital-electronics-1/blob/main/02-logic/g_SoP.png)
+   ![PoS](https://github.com/JosefCaha/digital-electronics-1/blob/main/02-logic/l_PoS.png)
 
 ### 4-bit comparator
 
