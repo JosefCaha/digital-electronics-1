@@ -57,7 +57,7 @@ end architecture behavioral;
 
 2. Screenshot with simulated time waveforms.
 
-   ![simulovane_signaly]()
+   ![simulovane_signaly](https://github.com/JosefCaha/digital-electronics-1/blob/main/03-vivado/simulation.jpg)
 
 3. Listing of pin assignments for the Nexys A7 board in `nexys-a7-50t.xdc`.
 
