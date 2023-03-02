@@ -64,18 +64,18 @@ Piny jednotlivych anod a katod:
    --------------------------------------------------------------------
    -- Experiments on your own: LED(7:4) indicators
 
-   --Turn LED(4) on if input value is equal to 0, ie "0000"
+   --LED(4) zapne, kdyz vstup = 0
     LED(4) <= '1' when SW = "0000" else '0';
 
-    --Turn LED(5) on if input value is greater than "1001", ie 10, 11, 12, ...
+    --Turn LED(5) zapne, kdyz vstup bude VETSI nez 9
     LED(5) <= '1' when SW > "1001" else '0';
 
-    --Turn LED(6) on if input value is odd, ie 1, 3, 5, ...
+    --Turn LED(6) zapne, kdyz vstup bude LICHE cislo
     LED(6) <= '1' when SW = "XX01" else
             '1' when SW = "XX11" else 
             '0';
 
-    --Turn LED(7) on if input value is a power of two, ie 1, 2, 4, or 8
+    --Turn LED(7) zapne, kdyz vstup bude SUDE cislo
     LED(7) <= '1' when SW = "0001" else
             '1' when SW = "0010" else 
             '1' when SW = "0100" else 
