@@ -48,6 +48,6 @@ end Behavioral;
 
 ### Shift register
 
-1. Image of the shift register `top` level schematic. -> ZKONTROLOVAT SPRÁVNOST
+1. Image of the shift register `top` level schematic.
 
    ![top-shift_register](https://github.com/JosefCaha/digital-electronics-1/blob/main/05-ffs/shift_register.png)
