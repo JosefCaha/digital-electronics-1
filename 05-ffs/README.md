@@ -2,7 +2,7 @@
 
 ### Flip-flops
 
-1. VHDL architektura pro **T-type flip-flop**.
+1. VHDL architektura pro **T-type flip-flop**. -> PŘEDĚLAT NA JK-FLIP-FLOP
 
 ```vhdl
 architecture Behavioral of t_ff_rst is
@@ -38,7 +38,7 @@ end process p_t_ff_rst;
 end Behavioral;
 ```
 
-2. Simulovane prubehy signalu pro **D-latch** a **T-flip-flop**
+2. Simulovane prubehy signalu pro **D-latch** a **T-flip-flop** -> ZKONTROLOVAT SPRÁVNOST
 
 ### D-latch:
    ![simulace_D-latch](https://github.com/JosefCaha/digital-electronics-1/blob/main/05-ffs/d-latch_simulation.png)
