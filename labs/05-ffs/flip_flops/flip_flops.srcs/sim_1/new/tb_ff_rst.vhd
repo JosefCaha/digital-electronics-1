@@ -13,7 +13,7 @@ end entity tb_ff_rst;
 ------------------------------------------------------------
 architecture testbench of tb_ff_rst is
 
-    constant c_CLK_100MHZ_PERIOD : time := 10 ns;
+    constant c_CLK_100MHZ_PERIOD : time := 10 ns; -- !!! 100MHZ = 10 ns !!! (v realitě 100MHz odpovídá času 10ns)
 
     --Local signals
     signal s_clk_100MHz : std_logic;
@@ -39,7 +39,7 @@ begin
     --------------------------------------------------------
     p_clk_gen : process
     begin
-        while now < 200 ns loop -- 20 periods of 100MHz clock => !!! 100MHZ = 10 ns !!!
+        while now < 200 ns loop -- 20 periods of 100MHz clock -- !!! 100MHZ = 10 ns !!!
             s_clk_100MHz <= '0';
             wait for c_CLK_100MHZ_PERIOD / 2;
             s_clk_100MHz <= '1';
