@@ -38,7 +38,7 @@ end process p_t_ff_rst;
 end Behavioral;
 ```
 
-2. Simulovane prubehy signalu pro **D-latch** a **T-flip-flop** -> ZKONTROLOVAT SPRÁVNOST
+2. Simulovane prubehy signalu pro **D-latch** a **T-flip-flop**
 
 ### D-latch:
    ![simulace_D-latch](https://github.com/JosefCaha/digital-electronics-1/blob/main/05-ffs/d-latch_simulation.png)
@@ -48,6 +48,6 @@ end Behavioral;
 
 ### Shift register
 
-1. Image of the shift register `top` level schematic.
+1. Image of the shift register `top` level schematic. -> ZKONTROLOVAT SPRÁVNOST
 
    ![top-shift_register](https://github.com/JosefCaha/digital-electronics-1/blob/main/05-ffs/shift_register.png)
