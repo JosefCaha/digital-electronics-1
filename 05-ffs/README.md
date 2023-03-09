@@ -2,7 +2,7 @@
 
 ### Flip-flops
 
-1. Listing of VHDL architecture for T-type flip-flop. Always use syntax highlighting, meaningful comments, and follow VHDL guidelines:
+1. VHDL architektura pro **T-type flip-flop**.
 
 ```vhdl
 architecture Behavioral of t_ff_rst is
@@ -38,16 +38,16 @@ end process p_t_ff_rst;
 end Behavioral;
 ```
 
-2. Screenshot with simulated time waveforms. Try to simulate both flip-flops in a single testbench with a maximum duration of 200 ns, including reset. Always display all inputs and outputs (display the inputs at the top of the image, the outputs below them) at the appropriate time scale!
+2. Simulovane prubehy signalu pro **D-latch** a **T-flip-flop**
 
 ### D-latch:
-   ![your figure](https://github.com/JosefCaha/digital-electronics-1/blob/main/labs/05-ffs/d-latch_simulation.png)
+   ![simulace_D-latch](https://github.com/JosefCaha/digital-electronics-1/blob/main/05-ffs/d-latch_simulation.png)
    
 ### T-flip-flop:
-   ![your figure](https://github.com/JosefCaha/digital-electronics-1/blob/main/labs/05-ffs/t-ff.png)
+   ![simulace t-flip-flop](https://github.com/JosefCaha/digital-electronics-1/blob/main/05-ffs/t-ff.png)
 
 ### Shift register
 
-1. Image of the shift register `top` level schematic. The image can be drawn on a computer or by hand. Always name all inputs, outputs, components and internal signals!
+1. Image of the shift register `top` level schematic.
 
-   ![your figure](https://github.com/JosefCaha/digital-electronics-1/blob/main/labs/05-ffs/shift_register.png)
+   ![top-shift_register](https://github.com/JosefCaha/digital-electronics-1/blob/main/05-ffs/shift_register.png)
