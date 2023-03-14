@@ -5,37 +5,40 @@
 1. VHDL architektura pro **T-type flip-flop**. -> PŘEDĚLAT NA JK-FLIP-FLOP
 
 ```vhdl
-architecture Behavioral of t_ff_rst is
-    -- It must use this local signal instead of output ports
-    -- because "out" ports cannot be read within the architecture
-    signal s_q : std_logic;
+architecture behavioral of jk_ff_rst is
+
+signal sig_q : std_logic;
+
 begin
     --------------------------------------------------------
-    -- p_t_ff_rst:
-    -- T type flip-flop with a high-active synchro reset,
-    -- rising-edge clk.
-    -- q(n+1) = t./q(n) + /t.q(n)
-    -- q(n+1) =  q(n) if t = 0 (no change)
-    -- q(n+1) = /q(n) if t = 1 (inversion)
+    -- p_jk_ff_rst:
+    -- JK type flip-flop 
+
     --------------------------------------------------------
-    p_t_ff_rst : process(clk)
-begin
-    if rising_edge (clk) then
-        if (rst = '1') then
-            s_q         <= '0';
-            s_q_bar     <= '1';
-        else
-            if (t = '0') then
-                s_q      <= s_q;
-                s_q_bar  <= s_q_bar;
-            else 
-                s_q      <= not s_q;
-                s_q_bar  <= not s_q_bar;
-            end if;
-            end if;
-    end if;        
-end process p_t_ff_rst;
-end Behavioral;
+    p_jk_ff_rst : process (clk) is
+    begin
+        if rising_edge(clk) then  -- Synchronous process
+            if rst = '1' then
+              sig_q <= '0';
+              q_bar <= not(sig_q);
+            elsif j = '0' and k = '0' then
+                sig_q <= sig_q;
+                q_bar <= not(sig_q);
+            elsif j = '1' and k = '0' then
+                sig_q <= '1';
+                q_bar <= not(sig_q);
+            elsif j = '0' and k = '1' then
+                sig_q <= '0';
+                q_bar <= not(sig_q);
+            else
+            sig_q <= not(sig_q);
+            q_bar <= not(sig_q);
+                       
+             
+              end if;
+        end if;
+    end process p_jk_ff_rst;
+end architecture behavioral;
 ```
 
 2. Simulovane prubehy signalu pro **D-latch** a **T-flip-flop**
