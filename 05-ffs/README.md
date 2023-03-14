@@ -2,7 +2,7 @@
 
 ### Flip-flops
 
-1. VHDL architektura pro **T-type flip-flop**. -> PŘEDĚLAT NA JK-FLIP-FLOP
+1. VHDL architektura pro **JK-type flip-flop**.
 
 ```vhdl
 architecture behavioral of jk_ff_rst is
